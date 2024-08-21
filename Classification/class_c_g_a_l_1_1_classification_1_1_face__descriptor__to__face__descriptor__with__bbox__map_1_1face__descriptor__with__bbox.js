@@ -1,0 +1,6 @@
+var class_c_g_a_l_1_1_classification_1_1_face__descriptor__to__face__descriptor__with__bbox__map_1_1face__descriptor__with__bbox =
+[
+    [ "face_descriptor_with_bbox", "class_c_g_a_l_1_1_classification_1_1_face__descriptor__to__face__descriptor__with__bbox__map_1_1face__descriptor__with__bbox.html#a5fdac202ff3f3bdb7721a56258b19d11", null ],
+    [ "bbox", "class_c_g_a_l_1_1_classification_1_1_face__descriptor__to__face__descriptor__with__bbox__map_1_1face__descriptor__with__bbox.html#a587ebd8794580d98f57ad5d7a9dab982", null ],
+    [ "operator face_descriptor", "class_c_g_a_l_1_1_classification_1_1_face__descriptor__to__face__descriptor__with__bbox__map_1_1face__descriptor__with__bbox.html#ada03a74a45c0ae0e38de143ba26bd654", null ]
+];

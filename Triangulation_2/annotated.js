@@ -1,0 +1,38 @@
+var annotated =
+[
+    [ "CGAL", null, [
+      [ "Constrained_Delaunay_triangulation_2", "class_c_g_a_l_1_1_constrained___delaunay__triangulation__2.html", "class_c_g_a_l_1_1_constrained___delaunay__triangulation__2" ],
+      [ "Constrained_triangulation_2", "class_c_g_a_l_1_1_constrained__triangulation__2.html", "class_c_g_a_l_1_1_constrained__triangulation__2" ],
+      [ "Constrained_triangulation_face_base_2", "class_c_g_a_l_1_1_constrained__triangulation__face__base__2.html", null ],
+      [ "Constrained_triangulation_plus_2", "class_c_g_a_l_1_1_constrained__triangulation__plus__2.html", "class_c_g_a_l_1_1_constrained__triangulation__plus__2" ],
+      [ "Delaunay_triangulation_2", "class_c_g_a_l_1_1_delaunay__triangulation__2.html", "class_c_g_a_l_1_1_delaunay__triangulation__2" ],
+      [ "Exact_intersections_tag", "struct_c_g_a_l_1_1_exact__intersections__tag.html", null ],
+      [ "Exact_predicates_tag", "struct_c_g_a_l_1_1_exact__predicates__tag.html", null ],
+      [ "No_constraint_intersection_requiring_constructions_tag", "struct_c_g_a_l_1_1_no__constraint__intersection__requiring__constructions__tag.html", null ],
+      [ "No_constraint_intersection_tag", "struct_c_g_a_l_1_1_no__constraint__intersection__tag.html", null ],
+      [ "No_intersection_tag", "struct_c_g_a_l_1_1_no__intersection__tag.html", null ],
+      [ "Regular_triangulation_2", "class_c_g_a_l_1_1_regular__triangulation__2.html", "class_c_g_a_l_1_1_regular__triangulation__2" ],
+      [ "Regular_triangulation_face_base_2", "class_c_g_a_l_1_1_regular__triangulation__face__base__2.html", null ],
+      [ "Regular_triangulation_vertex_base_2", "class_c_g_a_l_1_1_regular__triangulation__vertex__base__2.html", "class_c_g_a_l_1_1_regular__triangulation__vertex__base__2" ],
+      [ "Triangulation_2", "class_c_g_a_l_1_1_triangulation__2.html", "class_c_g_a_l_1_1_triangulation__2" ],
+      [ "Triangulation_cw_ccw_2", "class_c_g_a_l_1_1_triangulation__cw__ccw__2.html", "class_c_g_a_l_1_1_triangulation__cw__ccw__2" ],
+      [ "Triangulation_face_base_2", "class_c_g_a_l_1_1_triangulation__face__base__2.html", null ],
+      [ "Triangulation_face_base_with_info_2", "class_c_g_a_l_1_1_triangulation__face__base__with__info__2.html", "class_c_g_a_l_1_1_triangulation__face__base__with__info__2" ],
+      [ "Triangulation_hierarchy_2", "class_c_g_a_l_1_1_triangulation__hierarchy__2.html", null ],
+      [ "Triangulation_hierarchy_vertex_base_2", "class_c_g_a_l_1_1_triangulation__hierarchy__vertex__base__2.html", null ],
+      [ "Triangulation_vertex_base_2", "class_c_g_a_l_1_1_triangulation__vertex__base__2.html", "class_c_g_a_l_1_1_triangulation__vertex__base__2" ],
+      [ "Triangulation_vertex_base_with_info_2", "class_c_g_a_l_1_1_triangulation__vertex__base__with__info__2.html", "class_c_g_a_l_1_1_triangulation__vertex__base__with__info__2" ]
+    ] ],
+    [ "ConstrainedDelaunayTriangulationTraits_2", "class_constrained_delaunay_triangulation_traits__2.html", null ],
+    [ "ConstrainedTriangulationFaceBase_2", "class_constrained_triangulation_face_base__2.html", "class_constrained_triangulation_face_base__2" ],
+    [ "ConstrainedTriangulationTraits_2", "class_constrained_triangulation_traits__2.html", "class_constrained_triangulation_traits__2" ],
+    [ "DelaunayTriangulationTraits_2", "class_delaunay_triangulation_traits__2.html", "class_delaunay_triangulation_traits__2" ],
+    [ "RegularTriangulationFaceBase_2", "class_regular_triangulation_face_base__2.html", "class_regular_triangulation_face_base__2" ],
+    [ "RegularTriangulationTraits_2", "class_regular_triangulation_traits__2.html", "class_regular_triangulation_traits__2" ],
+    [ "RegularTriangulationVertexBase_2", "class_regular_triangulation_vertex_base__2.html", "class_regular_triangulation_vertex_base__2" ],
+    [ "TriangulationFaceBase_2", "class_triangulation_face_base__2.html", null ],
+    [ "TriangulationHierarchyVertexBase_2", "class_triangulation_hierarchy_vertex_base__2.html", "class_triangulation_hierarchy_vertex_base__2" ],
+    [ "TriangulationTraits_2", "class_triangulation_traits__2.html", "class_triangulation_traits__2" ],
+    [ "TriangulationVertexBase_2", "class_triangulation_vertex_base__2.html", "class_triangulation_vertex_base__2" ],
+    [ "TriangulationVertexBaseWithInfo_2", "class_triangulation_vertex_base_with_info__2.html", "class_triangulation_vertex_base_with_info__2" ]
+];

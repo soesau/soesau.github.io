@@ -1,0 +1,26 @@
+var NAVTREEINDEX1 =
+{
+"index.html#Algebraic_foundationsExamples_1":[0,5,0],
+"index.html#Algebraic_foundationsFractions":[0,5],
+"index.html#Algebraic_foundationsInteroperability":[0,4],
+"index.html#Algebraic_foundationsIntroduction":[0,0],
+"index.html#Algebraic_foundationsRealE":[0,2],
+"index.html#Algebraic_foundationsRealN":[0,3],
+"index.html#Algebraic_foundationsTagsinAlgebraicStructure":[0,1,0],
+"modules.html":[1],
+"pages.html":[],
+"struct_c_g_a_l_1_1_coercion__traits.html":[1,0,10],
+"struct_c_g_a_l_1_1_coercion__traits.html#a1abfb24cfc2de1f449627fc2fb7488dd":[1,0,10,0],
+"struct_c_g_a_l_1_1_coercion__traits.html#a3241b3224d183bf3e0ce5d80b9100c4c":[1,0,10,2],
+"struct_c_g_a_l_1_1_coercion__traits.html#a57f30b0fa1c313e73ecfefee0a72bcbe":[1,0,10,1],
+"struct_c_g_a_l_1_1_coercion__traits.html#adaa0ff8242fb38714a52ca411dcd5664":[1,0,10,3],
+"struct_c_g_a_l_1_1_euclidean__ring__tag.html":[1,0,2],
+"struct_c_g_a_l_1_1_field__tag.html":[1,0,3],
+"struct_c_g_a_l_1_1_field__with__kth__root__tag.html":[1,0,4],
+"struct_c_g_a_l_1_1_field__with__root__of__tag.html":[1,0,5],
+"struct_c_g_a_l_1_1_field__with__sqrt__tag.html":[1,0,6],
+"struct_c_g_a_l_1_1_integral__domain__tag.html":[1,0,7],
+"struct_c_g_a_l_1_1_integral__domain__without__division__tag.html":[1,0,8],
+"struct_c_g_a_l_1_1_unique__factorization__domain__tag.html":[1,0,9],
+"todo.html":[3]
+};
