@@ -2945,7 +2945,7 @@ Non-rigid registration Example</h2>
 <div class="line">  FT w2 = 2.0;</div>
 <div class="line">  FT w3 = 500;</div>
 <div class="line"> </div>
-<div class="line">  PMP::non_rigid_mesh_to_mesh_registration(source, target, vtm, vrm, CGAL::parameters::point_to_point_energy(w1).point_to_plane_energy(w2).as_rigid_as_possible_energy(w3).correspondences(correspondences_mesh));</div>
+<div class="line">  PMP::non_rigid_mesh_to_mesh_registration(source, target, vtm, vrm, CGAL::parameters::point_to_point_energy(w1).point_to_plane_energy(w2).as_rigid_as_possible_energy(w3).correspondences(std::cref(correspondences_mesh)));</div>
 <div class="line">  PMP::apply_non_rigid_transformation(source, vtm);</div>
 <div class="line">  <a class="code hl_functionRef" href="../BGL/group___pkg_b_g_l_i_o_fct.html#gafa143949a33371dc6df8307be1ab8a66">CGAL::IO::write_polygon_mesh</a>(<span class="stringliteral">"bear"</span> + std::to_string(w1) + <span class="stringliteral">"_"</span> + std::to_string(w2) + <span class="stringliteral">"_"</span> + std::to_string(w3) + <span class="stringliteral">".off"</span>, source);</div>
 <div class="line"> </div>

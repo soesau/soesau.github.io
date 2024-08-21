@@ -422,6 +422,8 @@ a range of matching vertex pairs between the <code>source</code> and the <code>t
 <b>Type: </b><code><a class="elRef" href="../Circulator/class_const_range.html">ConstRange</a></code> whose value type is a pair of <code>boost::graph_traits&lt;TriangleMesh1&gt;::vertex_descriptor</code> and <code>boost::graph_traits&lt;TriangleMesh2&gt;::vertex_descriptor</code>. </li>
 <li>
 <b>Default: </b>empty </li>
+<li>
+<b>Extra: </b>to avoid copies, this parameter can be passed using <code>std::cref</code>. </li>
 </ul>
  </div>  </td><td><p class="starttd"></p>
 <p class="endtd"></p>
@@ -638,6 +640,8 @@ an range of matching vertex-point pairs between the <code>source</code> and the 
 <b>Type: </b><code><a class="elRef" href="../Circulator/class_const_range.html">ConstRange</a></code> whose value type is a pair of <code>boost::graph_traits&lt;TriangleMesh&gt;::vertex_descriptor</code> and the element type of <code>PointRange</code>. </li>
 <li>
 <b>Default: </b>empty </li>
+<li>
+<b>Extra: </b>to avoid copies, this parameter can be passed using <code>std::cref</code>. </li>
 </ul>
  </div>  </td><td><p class="starttd"></p>
 <p class="endtd"></p>
