@@ -1,4 +1,0 @@
-var struct_c_g_a_l_1_1_orthtree__traits__face__graph =
-[
-    [ "Split_predicate_node_min_extent", "class_c_g_a_l_1_1_orthtree__traits__face__graph_1_1_split__predicate__node__min__extent.html", "class_c_g_a_l_1_1_orthtree__traits__face__graph_1_1_split__predicate__node__min__extent" ]
-];
