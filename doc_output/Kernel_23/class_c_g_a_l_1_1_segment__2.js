@@ -1,0 +1,25 @@
+var class_c_g_a_l_1_1_segment__2 =
+[
+    [ "Segment_2", "class_c_g_a_l_1_1_segment__2.html#a6c62f1f9e2163dfe93395fda70fd7961", null ],
+    [ "bbox", "class_c_g_a_l_1_1_segment__2.html#ae46827f288c128bf39072bb656f576cc", null ],
+    [ "collinear_has_on", "class_c_g_a_l_1_1_segment__2.html#a893f5bd400848844a65303a9823b70c1", null ],
+    [ "direction", "class_c_g_a_l_1_1_segment__2.html#aa3d15f4614917045278d3a864e4fb8b3", null ],
+    [ "has_on", "class_c_g_a_l_1_1_segment__2.html#ab64cf561e7384a0c70c70360875a707a", null ],
+    [ "is_degenerate", "class_c_g_a_l_1_1_segment__2.html#a23a0c1be8ea62d0b24aff14b8650df9a", null ],
+    [ "is_horizontal", "class_c_g_a_l_1_1_segment__2.html#a5e58b295d3da03f3ceff9043569b0584", null ],
+    [ "is_vertical", "class_c_g_a_l_1_1_segment__2.html#a2ca16f87b8444b1fd4f458454d84eaa9", null ],
+    [ "max", "class_c_g_a_l_1_1_segment__2.html#ab50648c68ae2cde4e4db33505d49aeb7", null ],
+    [ "min", "class_c_g_a_l_1_1_segment__2.html#a5cf6dc3685e9985bcf753003e13d7a77", null ],
+    [ "operator!=", "class_c_g_a_l_1_1_segment__2.html#a4e4445c63f2e90194992aa86716f08e9", null ],
+    [ "operator==", "class_c_g_a_l_1_1_segment__2.html#ae14445a3219f34a43b82aec47027aafe", null ],
+    [ "operator[]", "class_c_g_a_l_1_1_segment__2.html#a4d576cc8891bce51ad77f9a94edbd95e", null ],
+    [ "opposite", "class_c_g_a_l_1_1_segment__2.html#abca92a76a491bb309e8d35c64ad6a4c9", null ],
+    [ "point", "class_c_g_a_l_1_1_segment__2.html#a8787f7015dae14c6562600d3c6e36a2f", null ],
+    [ "source", "class_c_g_a_l_1_1_segment__2.html#a4acc8326156176ca970ad46a14d5536f", null ],
+    [ "squared_length", "class_c_g_a_l_1_1_segment__2.html#a0c0e17a4642d7d870b9c87905629e410", null ],
+    [ "supporting_line", "class_c_g_a_l_1_1_segment__2.html#ac30d8636c4b8edbb4fa9f43a1ff39d60", null ],
+    [ "target", "class_c_g_a_l_1_1_segment__2.html#ac144b7b0a177cc38897a3276ee696827", null ],
+    [ "to_vector", "class_c_g_a_l_1_1_segment__2.html#a7fa6e96b8e6760f4629d65e45daeb49f", null ],
+    [ "transform", "class_c_g_a_l_1_1_segment__2.html#af9e6dd87d2425f709d5cd69357d37278", null ],
+    [ "vertex", "class_c_g_a_l_1_1_segment__2.html#af327b20bb456c6488d33a4ca6c93f0d3", null ]
+];

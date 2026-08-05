@@ -1,0 +1,27 @@
+var class_a_a_b_b_traits =
+[
+    [ "Bounding_box", "class_a_a_b_b_traits.html#a71832e63c8ab85c356fa6b3fc792ed3e", null ],
+    [ "Closest_point", "class_a_a_b_b_traits.html#a3fadc69b5c266b650dfcb0a953d2727d", null ],
+    [ "Compare_distance", "class_a_a_b_b_traits.html#aa600068262ed08a8e233ffc3e6ab3b0b", null ],
+    [ "Compute_bbox", "class_a_a_b_b_traits.html#af6e7982428973913f86030055e171e49", null ],
+    [ "Do_intersect", "class_a_a_b_b_traits.html#acd432e5763cef7e50b44f75f8b24c06d", null ],
+    [ "Equal", "class_a_a_b_b_traits.html#a66b88b59f9451121c84a9074a4fe019a", null ],
+    [ "FT", "class_a_a_b_b_traits.html#a1ee53f64a2ab05d4389003d4f36539e4", null ],
+    [ "Intersection", "class_a_a_b_b_traits.html#ab9fa977423a0c7a615168e517b5f7efc", null ],
+    [ "Intersection_and_primitive_id", "class_a_a_b_b_traits.html#af5b2ef75e7fca67d9ab37b0d4984000b", null ],
+    [ "Object_and_primitive_id", "class_a_a_b_b_traits.html#afeb8685b51df66ec98d9bf72e04007bf", null ],
+    [ "Point", "class_a_a_b_b_traits.html#a88a622647c5438503237ce957d99801f", null ],
+    [ "Point_and_primitive_id", "class_a_a_b_b_traits.html#a3c855ac5072a7a039cc043ff2b8e74c6", null ],
+    [ "Primitive", "class_a_a_b_b_traits.html#a18812bafada570757269e313ab06ff51", null ],
+    [ "Split_primitives", "class_a_a_b_b_traits.html#a33f90b5098acbbbcc2534d703ab46682", null ],
+    [ "Squared_distance", "class_a_a_b_b_traits.html#a4dfd5585e5b11a057f1223f024cf3e1c", null ],
+    [ "closest_point_object", "class_a_a_b_b_traits.html#a0f4c70ab9415b68cd08986893892561c", null ],
+    [ "compare_distance_object", "class_a_a_b_b_traits.html#a6afb566b44dd75a7d59bf77fd99b31aa", null ],
+    [ "compute_bbox_object", "class_a_a_b_b_traits.html#a0bfdfb7ed86eb8500c9bbf88d3530eba", null ],
+    [ "do_intersect_object", "class_a_a_b_b_traits.html#a598af78d67828151e80354c6dcd727e2", null ],
+    [ "equal_object", "class_a_a_b_b_traits.html#af97e46a393ff1206ccef607d5f3b1cd0", null ],
+    [ "intersection_object", "class_a_a_b_b_traits.html#af76b22b52473692f3e0741e87cf6e090", null ],
+    [ "set_shared_data", "class_a_a_b_b_traits.html#a6dba5130cc78298fb7039f479f657fe4", null ],
+    [ "split_primitives_object", "class_a_a_b_b_traits.html#ac0fbf27e51ef182c387b20318b239ba3", null ],
+    [ "squared_distance_object", "class_a_a_b_b_traits.html#aafb3e8fb18b87a6c580d70aad79018e2", null ]
+];
