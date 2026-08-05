@@ -219,17 +219,17 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a27b8561a9e8aff5b9aea579a4c796693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5d1f33b7523e4bf81edaeba01347b1"><td class="memTemplParams" colspan="2">template&lt;typename DiagonalizeTraits  = CGAL::Default_diagonalize_traits&lt;double, 3&gt;&gt; </td></tr>
 <tr class="memitem:a4d5d1f33b7523e4bf81edaeba01347b1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a4d5d1f33b7523e4bf81edaeba01347b1">compute_features</a> (<a class="elRef" href="../STL_Extension/struct_c_g_a_l_1_1_sequential__tag.html">Sequential_tag</a> tag)</td></tr>
-<tr class="memdesc:a4d5d1f33b7523e4bf81edaeba01347b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the point dimension for each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>.  <br /></td></tr>
+<tr class="memdesc:a4d5d1f33b7523e4bf81edaeba01347b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the local scale of the point cloud at each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>.  <br /></td></tr>
 <tr class="separator:a4d5d1f33b7523e4bf81edaeba01347b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac34014fd0dc5a9c6fd9d5abd606d578d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#ac34014fd0dc5a9c6fd9d5abd606d578d">compute_mass_function</a> (unsigned int num_samples, const <a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a661b02b3c7a7cd68c394766427da098e">Point_set</a> &amp;barycenters)</td></tr>
-<tr class="memdesc:ac34014fd0dc5a9c6fd9d5abd606d578d"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo sampling.  <br /></td></tr>
+<tr class="memdesc:ac34014fd0dc5a9c6fd9d5abd606d578d"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the local scale of the point cloud at each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>.  <br /></td></tr>
 <tr class="separator:ac34014fd0dc5a9c6fd9d5abd606d578d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60bb3ef5c914a927a2e05e55c383c4fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a60bb3ef5c914a927a2e05e55c383c4fd">compute_mass_function</a> (unsigned int num_samples=40)</td></tr>
 <tr class="memdesc:a60bb3ef5c914a927a2e05e55c383c4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo sampling.  <br /></td></tr>
 <tr class="separator:a60bb3ef5c914a927a2e05e55c383c4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a837bc1fc42235d38b4df2020afcea655"><td class="memTemplParams" colspan="2">template&lt;typename OutputPointIterator , typename OutputTriangleIterator &gt; </td></tr>
 <tr class="memitem:a837bc1fc42235d38b4df2020afcea655"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a837bc1fc42235d38b4df2020afcea655">graph_cut</a> (double lambda, OutputPointIterator pit, OutputTriangleIterator itt)</td></tr>
-<tr class="memdesc:a837bc1fc42235d38b4df2020afcea655"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruction.  <br /></td></tr>
+<tr class="memdesc:a837bc1fc42235d38b4df2020afcea655"><td class="mdescLeft">&#160;</td><td class="mdescRight">segments the adaptive triangulation into inside and outside tetrahedra via a graph cut.  <br /></td></tr>
 <tr class="separator:a837bc1fc42235d38b4df2020afcea655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9087619b4d042fcba3d8f49fe4980fba"><td class="memTemplParams" colspan="2">template&lt;typename NamedParameters  = parameters::Default_named_parameters&gt; </td></tr>
 <tr class="memitem:a9087619b4d042fcba3d8f49fe4980fba"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a9087619b4d042fcba3d8f49fe4980fba">initialize</a> (const NamedParameters &amp;np=<a class="elRef" href="../STL_Extension/group___pkg_s_t_l_extension_ref.html#gaac7f54fe7abb7321d8d755683eaafaf2">parameters::default_values</a>())</td></tr>
@@ -328,9 +328,10 @@ template&lt;typename GeomTraits &gt; </div>
 </div><div class="memdoc">
 
 <p>creates a <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html" title="reconstructs a watertight surface from a point set with normals and scanline information.">Range_data_surface_reconstruction</a></code> object. </p>
+<p>The <code>points</code> must have a property map for the scan angle and either a property map for the scan direction or a property map for the point source ID. If the point set does not have a normal property map, normals will be computed via <code><a class="elRef" href="../Point_set_processing_3/group___pkg_point_set_processing3_algorithms.html#gafc3627234666e1fb458e9387e9d5f3c6">CGAL::scanline_orient_normals()</a></code>. The required property maps are automatically created via CGAL::read_LAS(). They are: 'scan_angle' with type <code>float</code>, 'scan_direction_flag' with type <code>unsigned char</code>, 'point_source_ID' with type <code>unsigned short</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">points</td><td>a point set with normals and scanline information. The point set must have a property map for the scan angle and either a property map for the scan direction or a property map for the point source ID. If the point set does not have a normal property map, normals will be computed via <code>CGAL::scanline_orient_normals()</code>. </td></tr>
+    <tr><td class="paramname">points</td><td>a point set with normals and scanline information. </td></tr>
   </table>
   </dd>
 </dl>
@@ -429,8 +430,8 @@ template&lt;typename DiagonalizeTraits  = CGAL::Default_diagonalize_traits&lt;do
       </table>
 </div><div class="memdoc">
 
-<p>computes the point dimension for each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>. </p>
-<p>The eigenvectors and eigenvalues of the covariance matrix of the local neighborhood are computed via SVD. The size of the local neighborhood is chosen to minimize the entropy. The point dimension is then determined by the relative magnitude of the eigenvalues.</p>
+<p>computes the local scale of the point cloud at each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>. </p>
+<p>The eigenvectors and singular values of the covariance matrix of the local neighborhood are computed via SVD. The size of the local neighborhood is chosen to minimize the entropy. The point dimension is then determined by the relative magnitude of the singular values. The computed singular values are stored in the property map 'singular_values' with type <code>std::array&lt;double, 3&gt;</code> of the input point set. The computed eigenvectors are stored in the property map 'eigen_vectors' with type <code>std::array&lt;<a class="elRef" href="../Kernel_23/class_c_g_a_l_1_1_vector__3.html">Vector_3</a>, 3&gt;</code> of the input point set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tag</td><td>the concurrency tag to use for parallelization. </td></tr>
@@ -468,8 +469,8 @@ template&lt;typename GeomTraits &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo sampling. </p>
-<p>Alternatively, the mass function values for each finite tetrahedron can be set manually via <code>barycenters</code>.</p>
+<p>computes the local scale of the point cloud at each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>. </p>
+<p>The eigenvectors and singular values of the covariance matrix of the local neighborhood are computed via SVD. The size of the local neighborhood is chosen to minimize the entropy. The point dimension is then determined by the relative magnitude of the singular values. The computed singular values are stored in the property map 'singular_values' with type <code>std::array&lt;double, 3&gt;</code> of the input point set. The computed eigenvectors are stored in the property map 'eigen_vectors' with type <code>std::array&lt;<a class="elRef" href="../Kernel_23/class_c_g_a_l_1_1_vector__3.html">Vector_3</a>, 3&gt;</code> of the input point set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">num_samples</td><td>the number of Monte Carlo samples to draw for each tetrahedron in the adaptive triangulation. Defaults to 40. The computational effort scales linearly with the number of samples. The more samples are drawn, the more accurate the mass function values will be.</td></tr>
@@ -546,7 +547,8 @@ template&lt;typename OutputPointIterator , typename OutputTriangleIterator &gt; 
       </table>
 </div><div class="memdoc">
 
-<p>initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruction. </p>
+<p>segments the adaptive triangulation into inside and outside tetrahedra via a graph cut. </p>
+<p>The surface is then extracted as the boundary of the inside tetrahedra.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">OutputPointIterator</td><td>an output iterator taking <code><a class="elRef" href="../Kernel_23/class_c_g_a_l_1_1_point__3.html">Point_3</a></code>.</td></tr>
@@ -562,7 +564,7 @@ template&lt;typename OutputPointIterator , typename OutputTriangleIterator &gt; 
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>adaptive triangulation has been created and the mass function has been computed, either via <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a9087619b4d042fcba3d8f49fe4980fba" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">initialize()</a></code> or <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a605c893b1433af2183fd89ddfc2d7d30" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">adaptive_triangulation()</a></code>, <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the point dimension for each input point according to .">compute_features()</a></code> and <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#ac34014fd0dc5a9c6fd9d5abd606d578d" title="computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo samplin...">compute_mass_function()</a></code>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>adaptive triangulation has been created and the mass function has been computed, either via <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a9087619b4d042fcba3d8f49fe4980fba" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">initialize()</a></code> or <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a605c893b1433af2183fd89ddfc2d7d30" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">adaptive_triangulation()</a></code>, <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the point dimension for each input point according to .">compute_features()</a></code> and <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#ac34014fd0dc5a9c6fd9d5abd606d578d" title="computes the local scale of the point cloud at each input point according to .">compute_mass_function()</a></code>. </dd></dl>
 
 </div>
 </div>
