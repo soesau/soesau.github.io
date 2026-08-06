@@ -215,14 +215,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad3533eab52ae408b43a136af1b3cefe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27b8561a9e8aff5b9aea579a4c796693"><td class="memTemplParams" colspan="2">template&lt;typename DiagonalizeTraits  = CGAL::Default_diagonalize_traits&lt;double, 3&gt;&gt; </td></tr>
 <tr class="memitem:a27b8561a9e8aff5b9aea579a4c796693"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693">compute_features</a> (<a class="elRef" href="../STL_Extension/struct_c_g_a_l_1_1_parallel__tag.html">Parallel_tag</a> tag)</td></tr>
-<tr class="memdesc:a27b8561a9e8aff5b9aea579a4c796693"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the point dimension for each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>.  <br /></td></tr>
+<tr class="memdesc:a27b8561a9e8aff5b9aea579a4c796693"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the local scale of the point cloud at each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>.  <br /></td></tr>
 <tr class="separator:a27b8561a9e8aff5b9aea579a4c796693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5d1f33b7523e4bf81edaeba01347b1"><td class="memTemplParams" colspan="2">template&lt;typename DiagonalizeTraits  = CGAL::Default_diagonalize_traits&lt;double, 3&gt;&gt; </td></tr>
 <tr class="memitem:a4d5d1f33b7523e4bf81edaeba01347b1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a4d5d1f33b7523e4bf81edaeba01347b1">compute_features</a> (<a class="elRef" href="../STL_Extension/struct_c_g_a_l_1_1_sequential__tag.html">Sequential_tag</a> tag)</td></tr>
 <tr class="memdesc:a4d5d1f33b7523e4bf81edaeba01347b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the local scale of the point cloud at each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>.  <br /></td></tr>
 <tr class="separator:a4d5d1f33b7523e4bf81edaeba01347b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac34014fd0dc5a9c6fd9d5abd606d578d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#ac34014fd0dc5a9c6fd9d5abd606d578d">compute_mass_function</a> (unsigned int num_samples, const <a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a661b02b3c7a7cd68c394766427da098e">Point_set</a> &amp;barycenters)</td></tr>
-<tr class="memdesc:ac34014fd0dc5a9c6fd9d5abd606d578d"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the local scale of the point cloud at each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>.  <br /></td></tr>
+<tr class="memdesc:ac34014fd0dc5a9c6fd9d5abd606d578d"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo sampling.  <br /></td></tr>
 <tr class="separator:ac34014fd0dc5a9c6fd9d5abd606d578d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60bb3ef5c914a927a2e05e55c383c4fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a60bb3ef5c914a927a2e05e55c383c4fd">compute_mass_function</a> (unsigned int num_samples=40)</td></tr>
 <tr class="memdesc:a60bb3ef5c914a927a2e05e55c383c4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo sampling.  <br /></td></tr>
@@ -375,7 +375,7 @@ template&lt;typename GeomTraits &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the point dimension for each input point according to .">compute_features()</a></code> has been called to compute the dimensionality of the neighborhood of each point. The dimensionality is used to adapt the density of the triangulation with the features of the input point set. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the local scale of the point cloud at each input point according to .">compute_features()</a></code> has been called to compute the dimensionality of the neighborhood of each point. The dimensionality is used to adapt the density of the triangulation with the features of the input point set. </dd></dl>
 
 </div>
 </div>
@@ -399,8 +399,8 @@ template&lt;typename DiagonalizeTraits  = CGAL::Default_diagonalize_traits&lt;do
       </table>
 </div><div class="memdoc">
 
-<p>computes the point dimension for each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>. </p>
-<p>The eigenvectors and eigenvalues of the covariance matrix of the local neighborhood are computed via SVD. The size of the local neighborhood is chosen to minimize the entropy. The point dimension is then determined by the relative magnitude of the eigenvalues.</p>
+<p>computes the local scale of the point cloud at each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>. </p>
+<p>The eigenvectors and singular values of the covariance matrix of the local neighborhood are computed via SVD. The size of the local neighborhood is chosen to minimize the entropy. The point dimension is then determined by the relative magnitude of the singular values. The computed singular values are stored in the property map 'singular_values' with type <code>std::array&lt;double, 3&gt;</code> of the input point set. The computed eigenvectors are stored in the property map 'eigen_vectors' with type <code>std::array&lt;<a class="elRef" href="../Kernel_23/class_c_g_a_l_1_1_vector__3.html">Vector_3</a>, 3&gt;</code> of the input point set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">tag</td><td>the concurrency tag to use for parallelization. </td></tr>
@@ -469,8 +469,8 @@ template&lt;typename GeomTraits &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>computes the local scale of the point cloud at each input point according to <a class="el" href="citelist.html#CITEREF_demantke12dimensionality">[2]</a>. </p>
-<p>The eigenvectors and singular values of the covariance matrix of the local neighborhood are computed via SVD. The size of the local neighborhood is chosen to minimize the entropy. The point dimension is then determined by the relative magnitude of the singular values. The computed singular values are stored in the property map 'singular_values' with type <code>std::array&lt;double, 3&gt;</code> of the input point set. The computed eigenvectors are stored in the property map 'eigen_vectors' with type <code>std::array&lt;<a class="elRef" href="../Kernel_23/class_c_g_a_l_1_1_vector__3.html">Vector_3</a>, 3&gt;</code> of the input point set.</p>
+<p>computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo sampling. </p>
+<p>Alternatively, the mass function values for each finite tetrahedron can be retrieved by looking up the barycenter of each tetrahedra in the parameter <code>barycenters</code> and using the provided property 'mass'.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">num_samples</td><td>the number of Monte Carlo samples to draw for each tetrahedron in the adaptive triangulation. Defaults to 40. The computational effort scales linearly with the number of samples. The more samples are drawn, the more accurate the mass function values will be.</td></tr>
@@ -478,7 +478,7 @@ template&lt;typename GeomTraits &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the point dimension for each input point according to .">compute_features()</a></code> has been called and the adaptive triangulation has been created. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the local scale of the point cloud at each input point according to .">compute_features()</a></code> has been called and the adaptive triangulation has been created. </dd></dl>
 
 </div>
 </div>
@@ -507,7 +507,7 @@ template&lt;typename GeomTraits &gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd><code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the point dimension for each input point according to .">compute_features()</a></code> has been called and the adaptive triangulation has been created. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd><code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the local scale of the point cloud at each input point according to .">compute_features()</a></code> has been called and the adaptive triangulation has been created. </dd></dl>
 
 </div>
 </div>
@@ -564,7 +564,7 @@ template&lt;typename OutputPointIterator , typename OutputTriangleIterator &gt; 
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>adaptive triangulation has been created and the mass function has been computed, either via <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a9087619b4d042fcba3d8f49fe4980fba" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">initialize()</a></code> or <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a605c893b1433af2183fd89ddfc2d7d30" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">adaptive_triangulation()</a></code>, <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the point dimension for each input point according to .">compute_features()</a></code> and <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#ac34014fd0dc5a9c6fd9d5abd606d578d" title="computes the local scale of the point cloud at each input point according to .">compute_mass_function()</a></code>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>adaptive triangulation has been created and the mass function has been computed, either via <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a9087619b4d042fcba3d8f49fe4980fba" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">initialize()</a></code> or <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a605c893b1433af2183fd89ddfc2d7d30" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">adaptive_triangulation()</a></code>, <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a27b8561a9e8aff5b9aea579a4c796693" title="computes the local scale of the point cloud at each input point according to .">compute_features()</a></code> and <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#ac34014fd0dc5a9c6fd9d5abd606d578d" title="computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo samplin...">compute_mass_function()</a></code>. </dd></dl>
 
 </div>
 </div>
