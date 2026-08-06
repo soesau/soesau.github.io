@@ -234,11 +234,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9087619b4d042fcba3d8f49fe4980fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruction.  <br /></td></tr>
 <tr class="separator:a9087619b4d042fcba3d8f49fe4980fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605c893b1433af2183fd89ddfc2d7d30"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a605c893b1433af2183fd89ddfc2d7d30">adaptive_triangulation</a> (double sub_sampling_density, int iterations=10)</td></tr>
-<tr class="memdesc:a605c893b1433af2183fd89ddfc2d7d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruction.  <br /></td></tr>
+<tr class="memdesc:a605c893b1433af2183fd89ddfc2d7d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates an adaptive Delaunay triangulation from the input point set.  <br /></td></tr>
 <tr class="separator:a605c893b1433af2183fd89ddfc2d7d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bba8e22546083d3356e1bc968b75708"><td class="memTemplParams" colspan="2">template&lt;typename PointRange &gt; </td></tr>
 <tr class="memitem:a7bba8e22546083d3356e1bc968b75708"><td class="memTemplItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a7bba8e22546083d3356e1bc968b75708">import_triangulation</a> (PointRange points)</td></tr>
-<tr class="memdesc:a7bba8e22546083d3356e1bc968b75708"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the adaptive Delaunay triangulation from the set of input points.  <br /></td></tr>
+<tr class="memdesc:a7bba8e22546083d3356e1bc968b75708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces any existing triangulation with the Delaunay triangulation of <code>PointRange</code>.  <br /></td></tr>
 <tr class="separator:a7bba8e22546083d3356e1bc968b75708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
@@ -365,7 +365,8 @@ template&lt;typename GeomTraits &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruction. </p>
+<p>creates an adaptive Delaunay triangulation from the input point set. </p>
+<p>The density of the triangulation is adapted to the features of the input point set.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sub_sampling_density</td><td>sub-sampling density of the triangulation with respect of the input point set. A higher value results in a less dense triangulation.</td></tr>
@@ -558,7 +559,7 @@ template&lt;typename OutputPointIterator , typename OutputTriangleIterator &gt; 
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>adaptive triangulation has been created and the mass function has been computed, either via <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a9087619b4d042fcba3d8f49fe4980fba" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">initialize()</a></code> or <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a605c893b1433af2183fd89ddfc2d7d30" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">adaptive_triangulation()</a></code>, <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a8caf4906f5a1903d58b6f9131dd565c1" title="computes the local scale of the point cloud at each input point according to .">compute_features()</a></code> and <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#ac34014fd0dc5a9c6fd9d5abd606d578d" title="computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo samplin...">compute_mass_function()</a></code>. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>adaptive triangulation has been created and the mass function has been computed, either via <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a9087619b4d042fcba3d8f49fe4980fba" title="initializes the adaptive Delaunay triangulation and precomputes weights for the graph-cut reconstruct...">initialize()</a></code> or <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a605c893b1433af2183fd89ddfc2d7d30" title="creates an adaptive Delaunay triangulation from the input point set.">adaptive_triangulation()</a></code>, <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#a8caf4906f5a1903d58b6f9131dd565c1" title="computes the local scale of the point cloud at each input point according to .">compute_features()</a></code> and <code><a class="el" href="class_c_g_a_l_1_1_range__data__surface__reconstruction.html#ac34014fd0dc5a9c6fd9d5abd606d578d" title="computes the mass function for each tetrahedron in the adaptive triangulation via Monte Carlo samplin...">compute_mass_function()</a></code>. </dd></dl>
 
 </div>
 </div>
@@ -582,8 +583,8 @@ template&lt;typename PointRange &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>initializes the adaptive Delaunay triangulation from the set of input points. </p>
-<p>Replaces any existing triangulation. </p><dl class="tparams"><dt>Template Parameters</dt><dd>
+<p>Replaces any existing triangulation with the Delaunay triangulation of <code>PointRange</code>. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">PointRange</td><td>a model of the <code><a class="elRef" href="../Circulator/class_range.html">Range</a></code> concept, whose value type is convertible to <code><a class="elRef" href="../Kernel_23/class_c_g_a_l_1_1_point__3.html">Point_3</a></code>.</td></tr>
   </table>
